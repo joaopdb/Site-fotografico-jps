@@ -1,0 +1,603 @@
+@font-face{
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+@font-face{
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+header .container {
+    position: relative;
+}	
+
+header #logotipo{
+    position: absolute;
+    top: 2px;
+}
+
+#menu{
+    margin: 34px 0;
+}
+#menu li{
+    display: inline-block;
+    font-family: "OpenSans";
+}
+
+#menu li a{
+    color: #000;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+#orcamento{
+
+    text-align: center;
+    height: 280px;
+    width: 100%;
+
+}
+
+#orcamento button {
+
+    margin-top: 68px;
+    font-family: 'OpenSans-Light';
+    width: 350px;
+    text-align: center;
+    padding: 15px 20px;
+    border: 1px solid #8B8386;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    font-size: 18px;
+
+}
+
+#orcamento a{
+
+    color: #000;
+
+}
+
+#orcamento h3{
+
+    margin-top: 4%;
+    font-family: 'OpenSans-Light';
+    text-align: center;
+    font-size: 15px;
+
+}
+
+#rodape{
+
+    height: 126px;
+    width: 100%;
+
+}
+
+#rodape ul{
+
+    padding: 34px 0;
+    text-align: center;
+
+}
+
+.content{
+
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.content-img {
+
+    width: 440px;
+    margin-top: 6px;
+    margin-left: 7px;
+}
+
+.content-img-galeria {
+
+    width: 261px;
+    margin-top: 6px;
+    margin-left: 7px;
+}
+
+
+#leg-img {
+
+    position: relative;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: -50px;
+}
+
+#leg-img p {
+
+    position: relative;
+    padding: 10px 0;
+    color: #fff;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+#img {
+
+    position: relative;
+    width: 100%;
+
+}
+
+.banner{
+    height: 540px;
+    width: 100%;
+    margin-top: -15px;
+}
+
+.titulo {
+
+    padding: 40px 0;
+}
+.titulo h2{
+    font-size: 38px; 
+    font-family: 'OpenSans-Light';
+    text-align: center;
+}
+
+.titulo h5{
+    margin-top: 75px;
+    font-family: 'OpenSans-Light';
+    text-align: center;
+
+}
+
+.lbox{
+
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.lbox:target {
+
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10,10,10,.7);
+    position: fixed;
+}
+
+.box-img{
+
+    width: 900px;
+    margin: 20px auto;
+}
+
+.box-img a:hover{
+
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+
+.btn-slide{
+
+    color: #fff;
+    font-family: 'Arial';
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+#prev{
+
+    left:5%;
+    top: 45%;
+
+}
+
+#next{
+
+    right: 5%;
+    top: 45%;
+
+}
+
+#close{
+
+    top: 0;
+    right: 2%;
+}
+
+.box-img img{
+
+    opacity: 0;
+}
+
+.lbox:target .box-img img {
+
+    opacity: 5;
+    transition: opacity .4s linear;
+}
+
+.formulario{
+
+    margin-right: 120px;
+    float: right;
+    width: 40%;
+}
+
+.campo-formulario{
+
+    display: block;
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+
+}
+
+.bnt-enviar{
+
+    width: 100%;
+    padding: 14px 12px;
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    font-family: 'Arial';
+    font-size: 15px;
+
+}
+
+.googlemaps{
+
+    margin-left: 120px;
+    float: left;
+    width: 500px;
+}
+
+.contato{
+
+    width: 100%;
+    height: 405px;
+
+}
+
+.informacao{
+
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.informacao label{
+
+    margin-left:0px;
+
+}
+
+.contato-email{
+
+    width: 32%;
+    position: relative;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    margin: 15px 0px;
+}
+
+.contato-telefone{
+
+    width: 32%;
+    position: relative;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    margin: 15px -180px;
+}
+
+.texto-contato{
+
+
+    padding: 10px 0 30px;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    width: 77.6%;
+    width: calc(80% - 10px);
+    right: 0;
+    float: right;
+
+}
+
+.texto-contato h2{
+
+    font-family: 'OpenSans';
+    text-transform: uppercase;
+    margin: 0 0 10px;
+
+}
+
+.texto-contato p{
+
+    font-family: 'OpenSans';
+    margin: 0px;
+    word-wrap: break-word;
+
+}
+
+.icon{
+
+    width: 20%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 41px;
+    opacity: .5;
+    position: relative;
+    float: left;
+}
+
+/*Locação*/
+
+.text-arial-cinza {
+    font-family: arial;
+    font-size: 12px;
+    color: #666;
+}
+
+.text-roxo{
+    color: #1C1C1C;
+}
+
+#destaque-produtos-container{
+    position: relative;
+}
+
+#destaque-produtos {
+    margin: 30px auto; 
+}
+
+#destaque-produtos .col-image{
+    text-align: center;
+}
+
+#destaque-produtos .col-descricao h2{
+    font-family: arial;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#destaque-produtos .col-descricao .box-valor{
+    width: 100%;
+    position: relative;
+}
+
+#destaque-produtos .col-descricao .box-valor .text-reais{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 13px;
+    left: 28px; 
+}
+
+#destaque-produtos .col-descricao .box-valor .text-valor{
+    font-size: 50px;
+    position: absolute;
+    top: -17px;
+    left: 54px;
+}
+
+#destaque-produtos .col-descricao .box-valor .text-valor-centavos {
+    font-size: 30px;
+    position: absolute;
+    top: -10px;
+    left: 182px;
+}
+
+#destaque-produtos .col-descricao .box-valor .text-valor-centavos-2 {
+    font-size: 30px;
+    position: absolute;
+    top: -10px;
+    left: 130px;
+}
+
+
+#destaque-produtos .col-descricao .btn-comprar {
+    font-size: 26px;
+}
+
+#destaque-produtos .col-descricao .btn-comprar .fa{
+    font-size: 34px;
+    margin-top: 8px;
+}
+
+#destaque-produtos .col-descricao .box-valor .text-parcelas {
+    margin-top: 18px;
+}
+
+#btn-destaque-prev{
+    position: absolute;
+    top: 140px;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 64px;
+    color: #2a2a2a;
+    outline: 0;
+}
+
+#btn-destaque-next{
+    position: absolute;
+    top: 140px;
+    right:0;
+    background: none;
+    border: none;
+    font-size: 64px;
+    color: #2a2a2a;
+    outline: 0;
+}
+
+.box-produto-info a {
+    text-decoration: none;
+}
+
+.box-produto-info h3{
+    font-size: 12px;
+    font-family: arial;
+    color: #666;
+}
+
+.box-produto-info .produto-img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.box-produto-info .text-valor{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.title-default-roxo h2{
+
+    font-family: 'OpenSans-Light';
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 70px 0;
+    margin-top: -30px;
+
+}
+
+#cart-products {
+    margin-top: 20px;
+}
+#cart-products td {
+    vertical-align: middle;
+    color: #666;
+}
+#cart-products p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+#cart-products .btn {
+    border: none;
+    background: none;
+    outline: 0;
+}
+#cart-products .btn i {
+    font-size: 32px;
+}
+#cart-products .btn i.fa-close {
+    font-size: 14px;
+}
+#cart-products .form-control {
+    text-align: center;
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: 0;
+}
+#cart-products th {
+    font-weight: 100;
+}
+#cart-products img {
+    max-width: 80px;
+    max-height: 80px;
+}
+.box-outline-grey {
+    border: #CCC 1px solid;
+    height: 160px;
+    text-align: center;
+}
+#calculo-de-frete .btn {
+    background-color: #ccc;
+    height: 42px;
+    border-radius: 0;
+}
+#calculo-de-frete .form-control {
+    height: 42px;
+    border-radius: 0;
+}
+.box-cart-totais {
+    background-color: #eee;
+    height: 160px;
+    padding: 10px;
+}
+.box-cart-totais .table>tbody>tr>td, 
+.box-cart-totais .table>tbody>tr>th, 
+.box-cart-totais .table>tfoot>tr>td, 
+.box-cart-totais .table>tfoot>tr>th, 
+.box-cart-totais .table>thead>tr>td, 
+.box-cart-totais .table>thead>tr>th {
+    border: none;
+    padding: 14px;
+}
+.text-bold {
+    font-weight: bold;
+}
+.btn-roxo {
+    background-color: #4F4F4F;
+    height: 42px;
+    width: 164px;
+    font-weight: bold;
+    color: #fff!important;
+    border-radius: 0;
+}
+
+.img-destaque{
+    margin-right: -140px;
+}
+
+.img-produto{
+    margin-right: -140px; 
+}
+
+.col-md-3{
+
+    margin-bottom: 38px;
+}
+
+.row-carrinho{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+Table: tb_carrinho
+Columns:
+id_car               int(11) AI PK 
+quant_prod           int(11) 
+total                decimal(10,2) 
+nome_prod            varchar(45) 
+foto_principal       varchar(500) 
+preco_unid           decimal(10,2)
+
+Table: tb_produtos
+Columns:
+id_prod              int(11) AI PK 
+nome_prod            varchar(150) 
+preco                decimal(10,2) 
+quantidade_estoque   int(11) 
+foto_principal       varchar(500) 
+num_parcelas         int(11) 
+valor_parcela        decimal(10,2) 
+valor_prazo          decimal(10,2) 
+review               int(11)
